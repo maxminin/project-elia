@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+.forehead {
+    position: absolute;
+    display: flex;
+}
+.logo {
+    width: 200px;
+    height: 100px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.functions {
+    list-style-type: none;
+    margin-top: 20px;
+    margin-left: px;
+    display: flex;
+    align-items: flex-start;
+    align-content: center;
+    flex-direction: row;
+    text-align: center;
+    gap: 50px;
+}
+.abcd {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: Comfortaa, sans-serif;
+    text-decoration: none;
+    color: black;
+    transition: 0.4s;
+}
+.abcd:hover {
+    color: #1f9ee7;
+}
+.abc {
+    padding-left: 20px;
+    font-size: 22px;
+    font-weight: 800;
+    font-family: Comfortaa, sans-serif;
+    text-decoration: none;
+    color: black
+}
+.function1 {
+    width: 210px;
+    transition: 0.4s;  
+}
+.function1:hover {
+    transform: scale(1.1);
+    color: #1f9ee7;
+}
+    
+.function2 {
+    width: 235px;
+    transition: 0.4s;
+}
+.function2:hover {
+    transform: scale(1.1);
+    color: #1f9ee7;
+}
+.function3 {
+    width: 205px;
+    transition: 0.4s;
+}
+.function3:hover {
+    transform: scale(1.1);
+    color: #1f9ee7;
+}
+.function4 {
+    width: 205px;
+    transition: 0.4s;
+}
+.function4:hover {
+    transform: scale(1.1);
+    color: #1f9ee7;
+}
+.forehead-switcher {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 48px;
+    color: black        ;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-left: 3px;
+}
+.forehead-row {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.forehead-switcher-active {
+    font-family: Comfortaa, sans-serif;
+    font-weight: 700;
+    background: #1f9ee7;
+    border-radius: 34px;
+    color: #fff;
+    padding: 8px 12px;
+    display: inline-flex;
+    cursor: default;
+}
+.forehead-switcher-link {
+    color: black;
+    padding: 8px 12px;
+    border-radius: 34px;
+    text-decoration: none;
+    font-family: Comfortaa, sans-serif;
+    font-weight: 700;
+}
+.forehead-switcher-link:hover {
+    background-color: #f8f8f8;
+    color: #1f9ee7;
+}
+.home-main {
+    display: flex;
+}
+
+.home-main-img {
+    margin-top: -1.5%;
+    margin-left: -1.5%;
+    position: inherit;
+    width: 1000px;
+    height: 983px;
+}
+.home-main-info {
+    margin-top: 290px;
+    padding-left: 115px;
+    font-family: Comfortaa, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 30px;
+}
+.home-main-slogan {
+    padding-left: 15%;
+    font-family: Comfortaa, sans-serif;
+    text-align: center;
+    font-size: 22px;
+}
+
+:root {
+  --text-color: hsla(210, 50%, 85%, 1);
+  --shadow-color: hsla(210, 40%, 52%, .4);
+  --btn-color: #1f9ee7;
+  --bg-color: hsl(210, 80%, 42%);
+}
+
+* {
+  box-sizing: border-box;
+}
+button {
+  position:relative;
+  padding: 10px 20px;  
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin-left: 280px;
+  margin-top: 50px;
+  
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 46px;  
+  color: var(--text-color);
+  
+  background-color: var(--btn-color);
+  box-shadow: var(--shadow-color) 2px 2px 22px;
+  border-radius: 20px; 
+  z-index: 0;  
+  overflow: hidden;   
+}
+
+button:active {
+  outline-color: transparent;
+  box-shadow: var(--btn-color) 2px 2px 22px;
+}
+
+.right::after, button::after {
+  content: var(--content);
+  display: block;
+  position: absolute;
+  white-space: nowrap;
+  padding: 40px 40px;
+  pointer-events:none;
+}
+
+button::after{
+  font-weight: 900;
+  top: -30px;
+  left: -20px;
+} 
+
+.right, .left {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+.right {
+  left: 66%;
+}
+.left {
+  right: 66%;
+}
+.right::after {
+  top: -30px;
+  left: calc(-66% - 20px);
+  
+  background-color: var(--bg-color);
+  color:transparent;
+  transition: transform .4s ease-out;
+  transform: translate(0, -90%) rotate(0deg)
+}
+
+button:hover .right::after {
+  transform: translate(0, -47%) rotate(0deg)
+}
+
+button .right:hover::after {
+  transform: translate(0, -50%) rotate(-7deg)
+}
+
+button .left:hover ~ .right::after {
+  transform: translate(0, -50%) rotate(7deg)
+}
+
+/* bubbles */
+button::before {
+  content: '';
+  pointer-events: none;
+  opacity: .6;
+  background:
+    radial-gradient(circle at 20% 35%,  transparent 0,  transparent 2px, var(--text-color) 3px, var(--text-color) 4px, transparent 4px),
+    radial-gradient(circle at 75% 44%, transparent 0,  transparent 2px, var(--text-color) 3px, var(--text-color) 4px, transparent 4px),
+    radial-gradient(circle at 46% 52%, transparent 0, transparent 4px, var(--text-color) 5px, var(--text-color) 6px, transparent 6px);
+
+  width: 100%;
+  height: 300%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  animation: bubbles 5s linear infinite both;
+}
+
+@keyframes bubbles {
+  from {
+    transform: translate();
+  }
+  to {
+    transform: translate(0, -66.666%);
+  }
+}

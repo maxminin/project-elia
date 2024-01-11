@@ -1,0 +1,142 @@
+.h1 {
+    margin-left: 450px;
+    margin-top: 20px;
+    font-family: Roboto, Arial;
+    font-weight: bold;
+}
+.detail-main {
+    display: flex;
+}
+.detail-img {
+    margin-left: 600px;
+}
+.offer_button {
+    color: white;
+    border-style: solid;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Roboto, Arial;
+    border-width: 2px;
+    background-color: rgb(48, 164, 221);
+    border-color: rgb(48, 164, 221);
+    border-radius: 10px;
+    height: 50px;
+    width: 300px;
+    position: absolute;
+    margin-top: 400px;
+    margin-left: 760px;
+    transition: background-color 0.15s, color 0.15s;
+}
+.offer_button:hover {
+    color: rgb(48, 164, 221);
+    background-color: white;
+
+}
+.offer_button:active {
+    opacity: 0.8;
+}
+.description1 {
+    font-weight: 500;
+    font-size: medium;
+    font-family: Roboto, Arial;
+    margin-top: 100px;
+    margin-left: 550px;
+}
+.description1-2 {
+    font-weight: 500;
+    font-size: medium;
+    font-family: Roboto, Arial;
+    margin-top: 50px;
+    margin-left: 550px;
+}
+.li {
+    margin-left: 570px;
+    margin-top: 30px;
+}
+.text-area {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 600px;
+    height: 36px;
+    padding-left: 10px;
+    font-size: 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(192, 192, 192);
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+    width: 300px;
+}
+.text-area::placeholder {
+    font-family: Roboto, Arial;
+    font-size: 16px;
+}
+.item-rating {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 600px;
+}
+.rating {
+    display: flex;
+    align-items: flex-end;
+    font-size: 40px;
+    line-height: 0.75;
+
+}
+.rating-value {
+    font-size: 50%;
+    line-height: 1;
+    padding: 0px 0px 0px 10px;
+}
+.rating-body {
+    position: relative;
+}
+.rating-body::before {
+    content: "★★★★★" ;
+    display: block;
+
+}
+.rating-items {
+    display: flex;
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.rating-item {
+    flex: 0 0 15%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    
+}
+.rating-active {
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+.rating-active::before {
+    content: "★★★★★" ;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: #ffd300;
+}
+.review {
+    display: flex;
+}
+.review-text {
+    display: flex;
+    font-family: Roboto, Arial;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 600px;
+    margin-top: 50px;
+}
