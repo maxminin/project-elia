@@ -5,11 +5,21 @@
     <link rel="stylesheet" href="probi.css">
 </head>
 <body>
-    <button style="--content: 'ЗАМОВИТИ';">
+      <button class="offer-button" data-modal-target="#modal">
         <div class="left"></div>
           ЗАМОВИТИ
-        <div class="right"></div>
+        <div class="right"></div> 
       </button>
-      
+      <div class="modal" id="modal">
+        <div class="modal-header">
+          <div class="title">Example Modal</div>
+          <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis incidunt dolorem a recusandae vitae, non debitis quis provident deleniti numquam obcaecati iure voluptate nesciunt excepturi nihil quam impedit, doloremque inventore praesentium distinctio? Exercitationem natus cum eveniet maiores itaque dolores modi magni quae recusandae quaerat veniam odit eum, possimus cupiditate, voluptates soluta iste cumque? Quaerat explicabo quas, dolor modi expedita non dolores mollitia ipsa laboriosam fugit nulla reiciendis quia ipsam similique itaque saepe minima eligendi deleniti, quae voluptate! Sit, minima temporibus?
+        </div>
+      </div>
+      <div id="overlay"></div>
+      <script src="app.js"></script>
 </body>
 </html>
