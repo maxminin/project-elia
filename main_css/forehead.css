@@ -46,13 +46,12 @@ html {
 .functions {
     list-style-type: none;
     margin-top: 20px;
-    margin-left: px;
     display: flex;
     align-items: flex-start;
     align-content: center;
     flex-direction: row;
     text-align: center;
-    gap: 50px;
+    gap: 26px;
 }
 .abcd {
     font-size: 18px;
@@ -66,7 +65,6 @@ html {
     color: #1f9ee7;
 }
 .abc {
-    padding-left: 20px;
     font-size: 22px;
     font-weight: 800;
     font-family: Comfortaa, sans-serif;
@@ -83,7 +81,7 @@ html {
 }
     
 .function2 {
-    width: 235px;
+    width: 205px;
     transition: 0.4s;
 }
 .function2:hover {
@@ -105,6 +103,14 @@ html {
 .function4:hover {
     transform: scale(1.1);
     color: #1f9ee7;
+}
+.function5 {
+  width: 205px;
+  transition: 0.4s;
+}
+.function5:hover {
+  transform: scale(1.1);
+  color: #1f9ee7;
 }
 .forehead-switcher {
     background: #fff;
@@ -391,4 +397,19 @@ input[type="text"] {
 .about-us-list li {
   margin-bottom: 30px;
   font-size: large;
+}
+.forehead-order {
+  display: flex;
+}
+.order-main {
+  margin-top: 50px;
+}
+.order-main-text {
+  padding-left: 600px;
+  font-family: Comfortaa, sans-serif;
+  font-size: 35px;
+}
+.order-main-text .contact-us {
+  font-size: 30px;
+  margin-left: 140px;
 }
