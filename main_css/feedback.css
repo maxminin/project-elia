@@ -1,0 +1,16 @@
+.main {
+    display: flex;
+    flex-direction: row;
+    gap: 300px;
+}
+.inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    gap: 5px;
+}
+.form-control, textarea {
+    max-width: 400px;
+    letter-spacing: 1px;
+}

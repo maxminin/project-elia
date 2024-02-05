@@ -4,6 +4,11 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  display: flex;
+  justify-content: center;
+}
+
 .to-top {
   background: #1f9ee7;
   position: fixed;
@@ -34,15 +39,35 @@ html {
 }
 
 .forehead {
-    position: absolute;
-    display: flex;
+  position: absolute;
+  display: flex;
+}
+.header-row-left {
+  display: flex;
+  align-items: center;
 }
 .logo {
-    width: 200px;
-    height: 100px;
-    margin-top: 20px;
-    cursor: pointer;
+  flex: 0 0 auto;
+  margin: 0 30px 0 0;
+  cursor: pointer;
+}  
+@media screen and (max-width: 1690px) {
+  .logo {
+    flex: 0 0 98px;
+    margin: 0 20px 0 0;   
+  }
+  .logo-img {
+    width: 90px;
+  }
+  .abcd {
+    font-size: 14px;
+  }
+  .abc {
+    font-size: 18px;
+  }
 }
+
+
 .functions {
     list-style-type: none;
     margin-top: 20px;
@@ -125,8 +150,10 @@ html {
 }
 .forehead-row {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    gap: 30px;
+    justify-content: space-between;
+    gap: 20px;
 }
 .forehead-switcher-active {
     font-family: Comfortaa, sans-serif;
@@ -152,25 +179,26 @@ html {
 }
 .home-main {
     display: flex;
+    justify-content: center;
 }
-
+.order-right-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 115px;
+}
 .home-main-img {
-    margin-top: -1.5%;
-    margin-left: -1.5%;
-    position: inherit;
-    width: 1000px;
-    height: 983px;
+  padding-top: 120px;
+    width: 800px;
 }
 .home-main-info {
     margin-top: 290px;
-    padding-left: 115px;
     font-family: Comfortaa, sans-serif;
     font-size: 50px;
     text-align: center;
     font-weight: 30px;
 }
 .home-main-slogan {
-    padding-left: 15%;
     font-family: Comfortaa, sans-serif;
     text-align: center;
     font-size: 22px;
@@ -192,7 +220,6 @@ html {
   border: none;
   background: none;
   cursor: pointer;
-  margin-left: 300px;
   margin-top: 50px;
   
   font-family: 'Montserrat', sans-serif;
@@ -373,7 +400,7 @@ input[type="text"] {
 }
 .about-us {
   display: flex;
-  margin-top: 7%;
+  margin-top: 5%;
 }
 .about-us-img {
   position: inherit;
@@ -385,7 +412,7 @@ input[type="text"] {
   font-size: 30px;
   padding-right: 10px;
   padding-left: 20px;
-  padding-top: 50px;
+  padding-top: 150px;
 }
 .about-us-list {
     list-style-type: none;
